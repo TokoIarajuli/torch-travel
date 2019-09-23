@@ -5,5 +5,22 @@
  */
 
 module.exports = {
-  plugins: [`gatsby-plugin-styled-components`],
+  siteMetadata: {
+    title: 'Torch',
+    description: 'Explore nature with Torch',
+    author: '@Tornike Iarajuli',
+  },
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-transition-link`,
+  ],
 }
