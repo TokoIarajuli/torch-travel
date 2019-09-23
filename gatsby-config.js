@@ -4,6 +4,10 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: 'Torch',
@@ -21,8 +25,8 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `aa6lmvvj10ja`,
-        accessToken: `coEg-s-TeNE4MIZnenmUau8zdPNpZZQc5LqeJ9dW6qU`,
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     `gatsby-transformer-sharp`,
