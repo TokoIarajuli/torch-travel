@@ -6,6 +6,7 @@ import About from '../components/Home/About'
 import Services from '../components/Home/Services'
 import StyledHero from '../components/StyledHero'
 import { graphql } from 'gatsby'
+import FeaturedTours from '../components/Home/FeaturedTour'
 
 export default ({ data }) => (
   <Layout>
@@ -15,13 +16,13 @@ export default ({ data }) => (
         info="Torch offers you perfect tours for traveling"
       >
         <AniLink fade to="/tours" className="btn-white">
-          {' '}
           Explore Tours
         </AniLink>
       </Banner>
     </StyledHero>
     <About />
     <Services />
+    <FeaturedTours />
   </Layout>
 )
 
