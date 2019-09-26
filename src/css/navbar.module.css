@@ -1,19 +1,9 @@
+
 .nav-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.25rem;
-}
-
-.firstSpan {
-  font-size: 1.7rem;
-  font-weight: bolder;
-}
-
-.secondSpan {
-  color: var(--primaryColor);
-  font-size: 1.7rem;
-  font-weight: bolder;
 }
 .logo-btn {
   background: transparent;

@@ -31,12 +31,12 @@ const About = () => {
         <article className={styles.aboutInfo}>
           <h4>Explore the difference</h4>
           <p>
-            Torch Torch Torch Torch Torch Torch Torch Torch Torch Torch Torch
-            Torch Torch Torch
+            Torch is an international travelling company founded by 3 moclils
+            during the hackathon in 2018.
           </p>
           <p>
-            Torch Torch Torch Torch Torch Torch Torch Torch Torch Torch Torch
-            Torch Torch Torch
+            Consisting of professional and interactive staff, Torch will offer
+            you adventure of your lifetime.
           </p>
           <button type="button" className="btn-primary">
             Read more
