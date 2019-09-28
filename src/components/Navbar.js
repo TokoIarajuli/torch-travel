@@ -34,7 +34,6 @@ const Navbar = () => {
           {links.map((item, index) => {
             return (
               <li key={index}>
-                {' '}
                 <AniLink fade to={item.path}>
                   {item.text}
                 </AniLink>
